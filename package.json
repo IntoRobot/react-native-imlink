@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/h124551753/react-native-imlink.git"
+    "url": "git+https://github.com/IntoRobot/react-native-imlink.git"
   },
   "author": "hhe",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/h124551753/react-native-imlink/issues"
+    "url": "https://github.com/IntoRobot/react-native-imlink/issues"
   },
-  "homepage": "https://github.com/h124551753/react-native-imlink#readme",
+  "homepage": "https://github.com/IntoRobot/react-native-imlink#readme",
   "keywords": [
     "react",
     "native"
