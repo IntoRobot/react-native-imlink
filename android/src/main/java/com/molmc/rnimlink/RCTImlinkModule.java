@@ -63,10 +63,10 @@ public class RCTImlinkModule extends ReactContextBaseJavaModule {
 		String isSsidHiddenStr = "NO";
 		int taskCount = options.getInt("count");
 		if (taskCount>1){
-			new EsptouchAsyncTaskMulti(promise).execute(apSsid, apBssid, apPassword,
+			new EsptouchAsyncTaskMulti(promise).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, apSsid, apBssid, apPassword,
 					isSsidHiddenStr, String.valueOf(taskCount));
 		}else{
-			new EsptouchAsyncTaskSingle(promise).execute(apSsid, apBssid, apPassword,
+			new EsptouchAsyncTaskSingle(promise).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, apSsid, apBssid, apPassword,
 					isSsidHiddenStr);
 		}
 	}
