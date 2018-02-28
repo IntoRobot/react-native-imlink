@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F7D03AE71E0D786200DD3EA2 /* imlink.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7D03AE61E0D786200DD3EA2 /* imlink.h */; };
+		F7D03AE71E0D786200DD3EA2 /* imlink.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F7D03AE61E0D786200DD3EA2 /* imlink.h */; };
 		F7D03AE91E0D786200DD3EA2 /* imlink.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D03AE81E0D786200DD3EA2 /* imlink.m */; };
 		F7D03B111E0D797000DD3EA2 /* ESP_ByteUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D03AF01E0D797000DD3EA2 /* ESP_ByteUtil.m */; };
 		F7D03B121E0D797000DD3EA2 /* ESP_CRC8.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D03AF21E0D797000DD3EA2 /* ESP_CRC8.m */; };
@@ -25,20 +25,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F7D03AE11E0D786200DD3EA2 /* CopyFiles */ = {
+		F7D03AE11E0D786200DD3EA2 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				F7D03AE71E0D786200DD3EA2 /* imlink.h in CopyFiles */,
+				F7D03AE71E0D786200DD3EA2 /* imlink.h in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F7D03AE31E0D786200DD3EA2 /* libimlink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libimlink.a; path = "/Users/lianghuiyuan/github/react-native-imlink/Example/node_modules/react-native-imlink/ios/build/Debug-iphoneos/libimlink.a"; sourceTree = "<absolute>"; };
+		116FBF052046E2E500EC33A9 /* libimlink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libimlink.a; path = "/Users/hehui/gitlab/react-native-imlink/ios/build/Debug-iphoneos/libimlink.a"; sourceTree = "<absolute>"; };
 		F7D03AE61E0D786200DD3EA2 /* imlink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imlink.h; sourceTree = "<group>"; };
 		F7D03AE81E0D786200DD3EA2 /* imlink.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imlink.m; sourceTree = "<group>"; };
 		F7D03AEF1E0D797000DD3EA2 /* ESP_ByteUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP_ByteUtil.h; sourceTree = "<group>"; };
@@ -139,7 +140,7 @@
 			buildPhases = (
 				F7D03ADF1E0D786200DD3EA2 /* Sources */,
 				F7D03AE01E0D786200DD3EA2 /* Frameworks */,
-				F7D03AE11E0D786200DD3EA2 /* CopyFiles */,
+				F7D03AE11E0D786200DD3EA2 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -147,7 +148,7 @@
 			);
 			name = imlink;
 			productName = imlink;
-			productReference = F7D03AE31E0D786200DD3EA2 /* libimlink.a */;
+			productReference = 116FBF052046E2E500EC33A9 /* libimlink.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -291,7 +292,10 @@
 		F7D03AED1E0D786200DD3EA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(inherited)",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -301,7 +305,10 @@
 		F7D03AEE1E0D786200DD3EA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(inherited)",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

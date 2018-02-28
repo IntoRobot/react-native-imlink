@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RCTBridgeModule.h"
-#import "RCTLog.h"
-#import "RCTUtils.h"
+#import <React/RCTBridgeModule.h>
+#import <React/RCTLog.h>
+#import <React/RCTUtils.h>
 
 #import "ESPTouchTask.h"
 #import "ESPTouchResult.h"
